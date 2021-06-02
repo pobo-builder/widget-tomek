@@ -57,6 +57,8 @@
         <p> Součástí kufru je praktická mobilní dílna s bohatým příslušenstvím pro všechny druhy práce.         </p>
         
         <div class="prislusenstvi__seznam">
+            <!-- upravit v css, aby se netylovalo <ul> ale > <div> -->
+            <div class="empty">
         <ul> 
             <li>5x - Vrták do dřeva - 4, 5, 6, 8, 10; mm </li>
             <li>14x - Vrták do kovu - 1,5; 1,5; 2; 2; 2,5; 3; 3; 3,5; 4; 4,5; 5; 5,5; 6; 6,5; mm</li>
@@ -65,6 +67,9 @@
             <li>10x - Šroubovací bit (50 mm) - S4; S5; S6; PZ1; PZ2; PZ3; T15; T20; T25; T30</li>
             <li>10x - Šroubovací bit (70 mm) - S4; S5; S6; PZ1; PZ2; PZ3; T15; T20; T25; T30</li>
         </ul>
+            </div>
+
+            <div class="empty">
         <ul>
             <li>20x - Šroubovací bit (25 mm) - PH1; PH2; PH3; PZ1; PZ2; PZ2; PZ2; PZ3; H3; H4; H5; H6; T15; T20; T25; T30; S4; S5-6</li>
             <li>2x - Odlamovací nůž s náhradními čepelemi</li>
@@ -73,6 +78,7 @@
             <li>1x - Držák bitů</li>
             <li>1x - Záhlubník</li>
          </ul>
+            </div>
         </div>
 
     </div>
@@ -84,7 +90,8 @@
     <div class="tabulka__hodnoty">
         <div class="tabulka__hodnota">
             <h4>50 Nm</h4>
-            <p>Kroutící moment</p>
+            <!-- zmenit <p> na <span>, to same i u elementu nize, pripadne ostylovat v css -->
+            <span>Kroutící moment</span>
         </div>
         <div class="tabulka__hodnota">
             <h4>50 Nm</h4>
@@ -111,16 +118,19 @@
     <div class="prednosti__informace1">
         <div class="prednosti__single">
           <div class="prednosti__ikona">
+              <!-- tady trochu ujizdi css -->
             <img src="http://pobo.vojtechvanek.com/vrtacka@2x.png" style="max-height: 50px; max-width: 50px;" max-height="50"alt="ikona">
          </div>
             <h5>Univerzální použití</h5>
-            <p>  Kompaktní akumulátorová příklepová vrtačka pro univerzální použití</p>
+            <!-- zmenit prosim z <p> na <span> (pripadne i v CSS) -->
+            <span>  Kompaktní akumulátorová příklepová vrtačka pro univerzální použití</span>
         </div>
         <div class="prednosti__single">
                 <div class="prednosti__ikona">
             <img src="http://pobo.vojtechvanek.com/zed@2x.png" style="max-height: 50px; max-width: 50px;" alt="ikona">
              </div>
             <h5>Univerzální použití</h5>
+            <!-- zmenit prosim z <p> na <span> (pripadne i v CSS) -->
             <p>  Kompaktní akumulátorová příklepová vrtačka pro univerzální použití</p>
         </div>
         <div class="prednosti__single">
@@ -128,6 +138,7 @@
             <img src="http://pobo.vojtechvanek.com/zarovka@2x.png"  style="max-height: 50px; max-width: 50px;"  alt="ikona">
                 </div>
             <h5>Univerzální použití</h5>
+            <!-- zmenit prosim z <p> na <span> (pripadne i v CSS) -->
             <p>  Kompaktní akumulátorová příklepová vrtačka pro univerzální použití</p>
         </div>
     </div>
@@ -137,6 +148,7 @@
             <img src="http://pobo.vojtechvanek.com/spona-small@2x.png" style="max-height: 50px; max-width: 50px;" alt="ikona">
                  </div>
             <h5>Univerzální použití</h5>
+            <!-- zmenit prosim z <p> na <span> (pripadne i v CSS) -->
             <p>  Kompaktní akumulátorová příklepová vrtačka pro univerzální použití</p>
         </div>
         <div class="prednosti__single2">
@@ -144,6 +156,7 @@
             <img src="http://pobo.vojtechvanek.com/kapacita@2x.png" style="max-height: 50px; max-width: 50px;" alt="ikona">
                     </div>
             <h5>Univerzální použití</h5>
+            <!-- zmenit prosim z <p> na <span> (pripadne i v CSS) -->
             <p>  Kompaktní akumulátorová příklepová vrtačka pro univerzální použití</p>
         </div>
 
@@ -155,17 +168,14 @@
     </div>
 </div>
 
-</div>
-
 <!-- FUNKCE!! -->
 
 <div class="funkce">
 
         <div class="funkce__text">
+            <!-- do pobo nastavit jako odstavec a zkopirovat HTML do toho editoru -->
             <h2>Akumulátorový systém Metabo 18 V</h2>
-            <div class="funkce__paragraph">
             <p> Akumulátorový systém Metabo zajišťuje 100 % kompatibilitu se všemi stroji v daném systému. Tuto možnost poskytuje výkonná technologie ULTRA-M Metabo, která představuje optimální sladění a perfektní komunikaci mezi strojem, akumulátorovým článkem a nabíječkou. Tak budou akumulátory efektivně a šetrně nabity a díky patentované technologii AIR COOLED zase rychle připraveny k použití. Při práci se optimálně využívá energie. Díky již zmíněné kompatibilitě nemusíte s každým novým strojem v aku systému Metabo nakupovat i akumulátorové články a nabíječku a ušetříte tak nezanedbatelné finanční náklady.</p>
-           </div>
 
         </div>
 
@@ -199,14 +209,12 @@
 <div class="stazeni">
 
     <div class="stazeni__odkazy">
-        
+
         <h2>Ke stažení </h2>
-      
          <ul>
             <li> <a href="#">Návod k obsluze (200.1 kB)</a></li>
             <li> <a href="#">Full service podmnínky (439.9 kB)</a></li>
         </ul>
-
     </div>
 
     <div class="stazeni__three">

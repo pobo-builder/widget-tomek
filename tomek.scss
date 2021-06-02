@@ -1,0 +1,685 @@
+
+// KVALITNÍ PŘÍSLUŠENSTVÍ A ROZSAH DODÁVEK
+
+.tomek-obalhl{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #f4f4f4;
+  padding: 50px 0px;
+  text-align: center;
+  align-items: center;
+
+
+  h2{
+    font-weight: 400;
+    font-size: 30px;
+    padding: 20px 0px;
+  }
+
+  &__popis{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+    line-height: 150%;
+  }
+
+  &__text{
+    width: 60%;
+  }
+
+  &__informace{
+    display: flex;
+    width: 90%;
+
+
+    &__text{
+      width: 50%;
+      text-align: left;
+      padding-left: 120px;
+
+
+      ul{
+        font-size: 20px;
+      }
+      li{
+        list-style-type: none;
+        position: relative;
+        padding: 15px 0px;
+        display: flex;
+        align-items: center;
+
+      }
+
+      li img{
+        max-width: 50px;
+        max-height: 50px;
+
+      }
+
+      .obrazek{
+        width: 100px;
+        text-align: center;
+      }
+
+      li p{
+        padding-left: 50px;
+      }
+    }
+
+    &__obrazek{
+      width: 50%;
+
+      img{
+        width: 80%;
+      }
+    }
+  }
+  @media only screen and (max-width: 1099px){
+
+
+    &__informace{
+      display: flex;
+      flex-direction: column;
+
+      &__text{
+        width: 100%;
+      }
+
+      &__obrazek{
+        width: 100%;
+        padding-top: 50px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 762px){
+    &__informace{
+      &__text{
+        padding: 0px 20px;
+      }
+    }
+
+    &__text{
+      width: 100%;
+      padding: 20px;
+    }
+
+
+  }
+}
+
+@media only screen and (max-width: 762px){
+  .obrazek{
+    min-width: 100px;
+  }
+}
+
+
+// PŘÍSLUŠENSTVÍ
+
+.tomek-prislusenstvi{
+  width: 100%;
+  background: white;
+
+  h3{
+    font-weight: 400;
+    font-size: 25px;
+    padding-top: 50px;
+  }
+
+  p{
+    font-size: 17px;
+    padding: 20px 0px;
+  }
+
+  &__obsah{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+  }
+
+  &__seznam{
+    display: flex;
+    width: 70%;
+
+
+    ul{
+      width: 50%;
+      text-align: left;
+      padding: 20px 0px;
+      font-size: 17px;
+    }
+    ul:nth-child(2){
+      margin-left: 150px;
+    }
+
+    li{
+      position: relative;
+      padding: 15px 0px;
+      list-style-type: none;
+    }
+
+    ul li::before {
+      position: absolute;
+      content: "\2022";
+      color: red;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      font-size: 25px;
+
+
+    }
+  }
+
+  @media only screen and (max-width: 864px){
+    &__seznam{
+      width: 100%;
+      flex-direction: column;
+
+      ul{
+        width: 100%;
+        padding: 30px;
+      }
+    }
+
+    ul:nth-child(2){
+      margin-left: 0px;
+    }
+  }
+}
+
+// TABULKA
+
+.tomek-tabulka{
+  width: 100%;
+  background: black;
+  color: white;
+  padding: 50px;
+  margin-top: 50px;
+
+  h4{
+    font-size: 30px;
+    font-weight: 400;
+  }
+
+  p{
+    font-size: 17px;
+    padding-top: 20px;
+  }
+
+  &__hodnoty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__hodnota{
+    width: 33.33333%;
+  }
+
+  &__hodnota:nth-child(2){
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+  }
+
+  @media only screen and (max-width: 890px){
+    &{
+      padding-top: 0;
+      padding-bottom: 50px;
+    }
+    &__hodnoty{
+      flex-direction: column;
+    }
+    &__hodnota{
+      width: 100%;
+      padding-top: 50px;
+
+    }
+
+    &__hodnota:nth-child(2){
+      border: none;
+    }
+  }
+}
+
+// PŘEDNOSTI
+
+.tomek-prednosti{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #f4f4f4;
+  padding: 50px 0px;
+
+  h5{
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  h2{
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 50px;
+    font-size: 30px;
+
+  }
+
+  &__obal{
+    width: 90%;
+    margin: auto;
+    display: flex;
+  }
+
+  &__obrazek{
+    width: 40%;
+    text-align: right;
+
+
+    img{
+      width: 90%;
+    }
+  }
+
+  &__informace{
+    width: 60%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+  &__informace1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__single{
+    width: 33.3333333%;
+    max-width: 250px;
+    text-align: center;
+    padding: 40px 20px 60px 20px;
+    border: 1px solid rgb(182, 182, 182);
+    margin: 0px 0px 10px 10px;
+
+    h5{
+      padding: 20px 0px;
+
+    }
+
+  }
+
+  &__informace2{
+    width: 66.666666%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  &__single2{
+    width: 50%;
+    max-width: 250px;
+    text-align: center;
+    padding: 40px 20px 60px 20px;
+    border: 1px solid rgb(182, 182, 182);
+    margin: 0px 0px 10px 10px;
+
+    h5{
+      padding: 20px 0px;
+
+    }
+  }
+
+  &__ikona{
+    height: 50px;
+  }
+
+  @media only screen and (max-width: 1169px){
+    &__obal{
+      flex-direction: column;
+    }
+    &__obrazek{
+      width: 100%;
+      text-align: center;
+      padding-bottom: 40px;
+
+      img{
+        width: 50%;
+      }
+    }
+
+    &__informace{
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  @media only screen and (max-width: 950px){
+    &__obal{
+      flex-direction: column;
+    }
+
+    &__obrazek{
+      width: 100%;
+      text-align: center;
+
+      img{
+        width: 80%;
+      }
+    }
+
+    &__informace{
+      width: 100%;
+      padding: 0;
+    }
+
+    &__informace1, &__informace2{
+      flex-direction: column;
+      width: 100%;
+    }
+
+
+
+    &__single, &__single2{
+      width: 100%;
+      max-width: none
+    }
+  }
+
+}
+
+
+// FUNKCE
+
+.tomek-funkce{
+  background:white;
+  width: 80%;
+  margin: auto;
+  display: flex;
+
+  h2{
+    font-size: 30px;
+    padding: 20px 0px;
+  }
+
+  p{
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  &__text{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+  }
+
+  &__obrazek{
+    width: 50%;
+    display: flex;
+
+
+
+    img{
+      width: 100%;
+
+    }
+
+  }
+
+  &__paragraph{
+    width: 100%;
+  }
+
+  @media only screen and (max-width: 1319px){
+    &__text{
+      padding-left: 0px;
+    }
+
+  }
+
+  @media only screen and (max-width: 1169px){
+    &{
+      flex-direction: column;
+    }
+
+    &__text{
+      width: 100%;
+      text-align: center;
+    }
+
+    &__obrazek{
+      width: 100%;
+      padding: 30px;
+    }
+  }
+}
+
+// SERVIS
+
+.tomek-servis{
+  width: 100%;
+  display: flex;
+  background: #f4f4f4;
+  padding: 50px;
+
+  &__obrazek{
+    width: 40%;
+    text-align: center;
+    padding-left: 70px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 40px;
+
+    h2{
+      font-size: 30px;
+      padding-bottom: 20px;
+    }
+
+    ul{
+      font-size: 17px;
+      padding-left: 20px;
+
+    }
+
+    li{
+      position: relative;
+      list-style-type: none;
+      padding: 15px 0px ;
+    }
+
+    ul li::before {
+      position: absolute;
+      content: "\2022";
+      color: red;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      font-size: 25px;
+      margin-top: -3px;
+    }
+  }
+
+  @media only screen and (max-width: 1200px){
+    &{
+      flex-direction: column;
+      padding: 0px;
+    }
+
+    &__obrazek{
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0px;
+
+      img{
+        width: 50%;
+      }
+    }
+
+    &__text{
+      width: 100%;
+      padding: 10px;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 769px){
+    &__obrazek{
+
+
+      img{
+        width:80%;
+      }
+    }
+  }
+}
+
+.tomek-stazeni{
+  width: 100%;
+
+  padding: 80px;
+  display: flex;
+
+  &__odkazy{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+
+    a{
+      color: red;
+      padding-top: 20px;
+    }
+
+    li{
+      position: relative;
+      list-style-type: none;
+      padding: 15px 0px ;
+    }
+
+    ul li::before {
+      position: absolute;
+      content: "\2022";
+      color: red;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+      font-size: 25px;
+      margin-top: -3px;
+    }
+  }
+
+  h2{
+    font-size: 30px;
+    padding: 20px 0px;
+  }
+
+  &__three{
+    width: 60%;
+    display: flex;
+  }
+
+  &__single{
+    width: 33.333333%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img{
+      width: 45%;
+    }
+  }
+
+  &__obsah{
+    width: 70%;
+    h5{
+      padding: 15px 0px;
+      font-size: 18px;
+      font-weight: 400;
+      color: rgb(63, 63, 63);
+    }
+
+    p{
+      font-size: 14px;
+      color: rgb(63, 63, 63);
+    }
+
+
+  }
+
+  @media only screen and (max-width: 1390px){
+    &__odkazy{
+      padding-left: 10px;
+    }
+
+    &__single{
+      width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 1130px){
+    &{
+      flex-direction: column;
+    }
+
+    &__odkazy{
+      width: 100%;
+      text-align: center;
+    }
+    &__three{
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    &__single{
+      width: 50%;
+    }
+  }
+
+  @media only screen and (max-width: 705px){
+    &{
+      padding: 20px;
+    }
+
+    &__three{
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__single{
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}
+
+
